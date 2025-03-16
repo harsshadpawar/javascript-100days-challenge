@@ -1,0 +1,56 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#time {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 0.6);
+  margin-bottom: 10px;
+  color: #0af;
+  letter-spacing: 2px;
+}
+
+#date {
+  font-size: 1.5rem;
+  color: #ccc;
+  letter-spacing: 1px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .clock-container {
+    padding: 25px 30px;
+  }
+
+  #time {
+    font-size: 2.8rem;
+  }
+
+  #date {
+    font-size: 1.2rem;
+  }
+}
